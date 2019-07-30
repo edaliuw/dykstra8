@@ -22,7 +22,7 @@ namespace ContosoUniversity.Models
         public DateTime StartDate { get; set; }
 
         public int? InstructorID { get; set; }
-        /* Ed Ali - Added RowVersion */
+        /* Ed Ali - Added RowVersion, which is a tracking property, based on when a change was made in the database in order to support where statement in CRUD. */
         [Timestamp]
         public byte[] RowVersion { get; set; }
 
